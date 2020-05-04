@@ -2,8 +2,8 @@ version: 2
 jobs:
   build:
     docker:
-      - image: fadlyas/kernel_dockerfile:latest
+      - image: movecrew/oven:latest
     steps:
       - checkout
-      - run: wget https://github.com/Mina-Project/Scripts/raw/master/vince
-      - run: bash vince
+      - run: wget https://raw.githubusercontent.com/Mina-Project/Scripts/master/vince/vince.sh
+      - run: bash vince.sh
